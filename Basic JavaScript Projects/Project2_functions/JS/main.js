@@ -10,3 +10,8 @@ function concatenateFunction() {
     sentence += " easier and funner!";
     document.getElementById("Concatenate").innerHTML = sentence;
 }
+
+function changeH3() {
+    var header = "Good work!"
+    document.getElementById("Header").innerHTML = header;
+}
