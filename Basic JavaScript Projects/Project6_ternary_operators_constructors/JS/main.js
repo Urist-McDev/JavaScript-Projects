@@ -28,15 +28,16 @@ function nestedFunction() { //A nested function that gives the first 6 letters o
     }
 }
 
-function Vehicle(Make, Model, Year, Color) {
+function Vehicle(Make, Model, Year, Color) { //Defines a class
     this.Vehicle_Make = Make;
     this.Vehicle_Model = Model;
     this.Vehicle_Year = Year;
     this.Vehicle_Color = Color;
 }
+//Creates an instance of the class
 var Jack = new Vehicle("Dodge", "Viper", 2020, "Red");
 var Emily = new Vehicle("Jeep", "Train Hawk", 2019, "White and Black");
 var Erik = new Vehicle("Ford", "Pinto", 1971, "Mustard");
-function myFunction() {
+function myFunction() { //Displays info from the class instance
     document.getElementById("Keywords_and_Constructors").innerHTML = "Erik drives a " + Erik.Vehicle_Color + "-colored " + Erik.Vehicle_Model + " manufactured in " + Erik.Vehicle_Year;
 }
