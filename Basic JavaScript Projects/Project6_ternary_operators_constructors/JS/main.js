@@ -11,3 +11,19 @@ function Vote_Function() {
     Can_vote = (Age < 18) ? "You are too young" : "You are old enough";
     document.getElementById("Vote").innerHTML = Can_vote + " to vote.";
 }
+
+function pText() {
+    document.getElementById("New_and_this").innerHTML = "Hello there!"
+}
+
+function nestedFunction() {
+    document.getElementById("Nested_Function").innerHTML = Alphabet();
+    function Alphabet() {
+        var Alphabet = "A B C";
+        function nextLetter() {
+            Alphabet += " D F G";
+        }
+        nextLetter();
+        return Alphabet;
+    }
+}
