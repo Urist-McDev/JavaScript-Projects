@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Arrow function</title>
+    </head>
+    <body>
+        <p id="text">You shouldn't see this.</p>
+        <script>
+            textFunction = () => "This was made by a one line function!";
+            document.getElementById("text").innerHTML = textFunction();
+        </script>
+    </body>
+</html>
