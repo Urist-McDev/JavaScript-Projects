@@ -95,6 +95,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) { //Draws the win line
         const animationLoop = requestAnimationFrame(animateLineDrawing);
 
         c.clearRect(0, 0, 608, 608);
+        c.beginPath();
         c.moveTo(x1, y1);
         c.lineTo(x, y);
         c.lineWidth = 10;
