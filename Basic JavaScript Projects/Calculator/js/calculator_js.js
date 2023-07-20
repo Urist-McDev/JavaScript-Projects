@@ -10,6 +10,7 @@ function Input_Digit(digit) { //Takes the given digit and makes sure it will be 
     
     if (Wait_Second_Operand === true) {
         Calculator.Display_Value = digit;
+        Calculator.Wait_Second_Operand = false;
     } else {
         Calculator.Display_Value = Display_Value === '0' ? digit : Display_Value + digit;
     }
