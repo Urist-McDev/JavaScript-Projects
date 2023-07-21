@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    </head>
+
+    <script>
+        //Creates a body element for the included DOM objects once the page has loaded
+        $(document).ready(function() {
+            $("html").append(
+                "<body>\
+                    <div id ='container'>\
+                        <div id='inner'>\
+                            <h1>Basic jQuery</h1>\
+                            <p id='1'>Paragraph 1</p>\
+                            <p id='2'>Paragraph 2</p>\
+                            <p id='3'>Paragraph 3</p>\
+                        </div>\
+                    </div>\
+                </body>"
+            );
+            //Changes the font color of element with ID 2 to red
+            $("#2").css({"color" : "red"});
+
+            //Slowly fades the h1 element when element with ID 3 is clicked
+            $("#3").click(function() {
+                $("h1").hide("slow");
+            });
+
+            //Puts the text in the log when element with ID 1 is clicked
+            $("#1").click(function() {
+                console.log("Clicked the first paragraph.")
+            });
+        });
+    </script>
+</html>
