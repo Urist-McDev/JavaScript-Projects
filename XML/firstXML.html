@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="xml_example"></p>
+        <script>
+            var xmlParser, xmlDocument;
+
+            var cakes = "<cake>" + "<flavor>Marbled</flavor>" + "<icing>Butter Milk</icing>" + "<size>Huge</size>" + "</cake>";
+
+            xmlParser = new DOMParser();
+
+            xmlDocument = xmlParser.parseFromString(cakes, "text/xml");
+
+            document.getElementById("xml_example").innerHTML = xmlDocument.getElementsByTagName("flavor")[0].childNodes[0].nodeValue;
+        </script>
+    </body>
+</html>
