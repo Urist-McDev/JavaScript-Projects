@@ -1,0 +1,16 @@
+.square {
+    width: 200px;
+    height: 200px;;
+    background: brown;
+    position: relative;
+    animation: move 4s infinite;
+}
+
+@keyframes move {
+    from {top: 0px;}
+    to {top: 300px;}
+
+    0% {transform: scale(1,1);}
+    50% {transform: scale(1.2,1.2);}
+    100% {transform: scale(1,1);}
+}

@@ -7,7 +7,11 @@
         <script src="./JavaScript/JavaScript_2.js" defer></script>
     </head>
     <body>
-        <h3>Contact form</h3>
+        <script>
+            document.body.classList.add('fade-out');
+            window.addEventListener('DOMContentLoaded', () => { document.body.classList.remove('fade-out'); });
+        </script>
+        <h3 style="font-size: 10vm;">Contact form</h3>
         <form name="contactForm" onsubmit="return validateForm()">
             <label>First Name:</label>
             <input name="fName" type="text" value="">
@@ -19,6 +23,10 @@
             <br>
             <label>Email:</label>
             <input name="email" type="text" value="">
+            <br>
+            <br>
+            <label>Phone Number:</label>
+            <input name="phoneNum" type="text" value="">
             <br>
             <br>
             <input type="submit" value="Submit">
