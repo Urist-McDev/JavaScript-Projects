@@ -23,3 +23,7 @@ function validateForm() {
         return false;
     }
 }
+
+function changeText() {
+    document.getElementById("double").style.color = "blue";
+}
